@@ -4,8 +4,7 @@
 
 - **Ngày sửa:** 04/11/2026
 - **Thay đổi:** Sửa đường dẫn CSS, trường email và lỗi gõ tên thuộc tính `background-color`.
-- **Commit bản hiện tại:** `2b7b7f583b55c9802e2bfaeb4a3ee20e5daacc2a` (`v2`).
-- **Commit trước đó:** `aded5c0f770aa8b97668f5f87d0c75f3efabad45` (`Add files via upload`).
-- **Trạng thái:** Hai commit đã có trên nhánh `main`; cần kiểm tra URL Pages để xác nhận bản deploy.
+- **Mã nguồn trước khi sửa:** `0cf0d53` ([commit](https://github.com/NgoQuocTrieu/KiemTra_A2.2/commit/0cf0d53111965a60c8d5e656607fd3e602276127)).
+- **Trạng thái:** Sửa đổi đang ở local, chưa có commit mới và chưa deploy lại.
 - **Hạn chế:** Form chưa gửi dữ liệu; không kèm ảnh/video theo yêu cầu.
-- **Kiểm tra tiếp:** Mở URL Pages sau khi deploy và kiểm tra lại trang cùng CSS.
+- **Kiểm tra tiếp:** Push bản sửa lên `main`, đợi Pages cập nhật, rồi mở lại URL và kiểm tra CSS.
