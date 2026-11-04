@@ -209,7 +209,7 @@ textarea:focus-visible {
 /* 1.6 */
 /* NHIEM VU 2: button */
 .button {
-  transition:bacground-color
+  transition: background-color
     /* 2.1 */
     180ms
     /* 2.2 */
