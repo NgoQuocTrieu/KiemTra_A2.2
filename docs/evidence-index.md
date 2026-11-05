@@ -1,4 +1,4 @@
-| Em thử gì | Kết quả | Ảnh/link (nếu có) |
+| Em thử gì | Kết quả | Ảnh/link (nếu có) |https://docs.google.com/document/d/1liz0FnoAOMJpui5hz_JN9roTeqncOweD46tmYjSSd-U/edit?usp=sharing|
 |---|---|---|
 | Mở URL bằng cửa sổ ẩn danh | Mở được | |https://docs.google.com/document/d/1liz0FnoAOMJpui5hz_JN9roTeqncOweD46tmYjSSd-U/edit?usp=sharing|
 | Thử Chế Độ Sáng Tối | Hiển Thị | https://docs.google.com/document/d/19sKShgzCPjrlilbwOzIpEGBer18vR7Y030YfmMIyyaM/edit?usp=sharing|
