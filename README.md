@@ -1,40 +1,50 @@
-# Portfolio V7
+# Portfolio V8
 
-Portfolio cá nhân làm bằng HTML và CSS, tiếp tục từ Lab 5.
+Portfolio cá nhân tĩnh, xây dựng bằng HTML5 và CSS3, tiếp nối v7.
 
-- **Tác giả:** Ngo Quoc Trieu
+- **Họ tên – MSSV – Lớp:** Ngô Quốc Triệu – 2071020181 – CNTT-20-04
+- **Ngành:** Công nghệ thông tin
 - **Repository:** https://github.com/NgoQuocTrieu/KiemTra_A2.2
-- **GitHub Pages:** https://ngoquoctrieu.github.io/KiemTra_A2.2/
-- **Công nghệ:** HTML5, CSS3; không dùng thư viện ngoài.
+- **Demo:** https://ngoquoctrieu.github.io/KiemTra_A2.2/
+- **Công nghệ:** HTML5, CSS3; không dùng JavaScript hay thư viện ngoài.
 
-## Chạy và kiểm tra
+## Demo
 
-Mở `index.html` trong trình duyệt. Mã nguồn chính gồm `index.html` và `style.css`, đặt cùng thư mục; GitHub Pages xuất bản từ nhánh `main`, thư mục gốc.
+Mở [Portfolio trên GitHub Pages](https://ngoquoctrieu.github.io/KiemTra_A2.2/).
 
-Các khu vực có thể thử: điều hướng giữa các mục, liên kết dự án, trạng thái hover/focus, bố cục thẻ ở các kích thước màn hình và kiểm tra trường bắt buộc của form. Form chỉ mô phỏng; không gửi email hay lưu thông tin. Không nhập dữ liệu thật.
+> **Trạng thái phiên bản:** Những thay đổi V8 trong repository local đã commit.
+## Cách mở
 
-## Hồ sơ
+1. Tải hoặc clone repository về máy.
+2. Mở thư mục dự án và mở `index.html` bằng trình duyệt; không cần cài đặt hay build.
+3. Thử các mục điều hướng, công tắc giao diện tối/sáng, bố cục ở kích thước màn hình khác nhau và các trường bắt buộc trong form.
+4. Bấm **Nộp thông tin** sau khi điền hợp lệ để mở trang xác nhận trong tab mới; dùng nút **Quay về trang ban đầu** để trở lại.
 
-- [AI_LOG.md](./AI_LOG.md): hiện tượng, nhận định, quyết định và kiểm tra.
-- [RELEASE_NOTES.md](./RELEASE_NOTES.md): thay đổi, commit và hạn chế.
+Form chỉ là bản demo tĩnh: trình duyệt kiểm tra dữ liệu, nhưng nội dung không được gửi hoặc lưu. Chỉ dùng dữ liệu giả.
 
-## Kiểm chứng local – repo – URL
+## Chức năng V8
 
-Kiểm tra ngày 04/11/2026. SHA mã nguồn được đối chiếu là `e45e5fa6c63a9490df54400f88bca48b5aa8edd2`; tại thời điểm kiểm tra, `main` local khớp `origin/main` . GitHub Pages báo deploy thành công cho cùng SHA.
+- Bật/tắt giao diện tối/sáng bằng HTML và CSS.
+- Hiển thị trạng thái trực quan cho trường hợp lệ/chưa hợp lệ; các trường bắt buộc được kiểm tra bởi trình duyệt.
+- Cuộn về đầu trang bằng nút cố định.
+- Nộp form để mở trang xác nhận `ket-qua.html` trong tab mới; trang xác nhận có liên kết quay lại.
 
-| Hạng mục | Kết quả | Căn cứ |
-|---|---|---|
-| Trang chính | HTTP 200; tiêu đề “Lab 5 · Portfolio thực hành”, lời chào “Triệu” | [URL Pages](https://ngoquoctrieu.github.io/KiemTra_A2.2/) |
-| CSS | `/style.css` HTTP 200; đây là đường dẫn trong HTML | [Tệp CSS đã xuất bản](https://ngoquoctrieu.github.io/KiemTra_A2.2/style.css) |
-| Đường dẫn CSS cũ | `/css/style.css` HTTP 404; nguyên nhân là CSS nằm ở thư mục gốc, không phải thư mục `css` | [Commit sửa đường dẫn](https://github.com/NgoQuocTrieu/KiemTra_A2.2/commit/2b7b7f583b55c9802e2bfaeb4a3ee20e5daacc2a) |
-| Phiên bản deploy | Thành công từ `main`, SHA `e45e5fa6c63a9490df54400f88bca48b5aa8edd2` | [Lịch sử commit](https://github.com/NgoQuocTrieu/KiemTra_A2.2/commits/main/) |
-| Kiểm tra local/repo | `main` khớp `origin/main`; không có thay đổi local tại thời điểm kiểm tra | Trạng thái Git ngày 04/11/2026 |
+## Bảng kiểm tra
 
-### Cải tiến giao diện và lý do
+| Việc đã thử | Kết quả |
+|---|---|
+| Kiểm tra định dạng thay đổi bằng `git diff --check` | Đạt |
+| Kiểm tra form có trường bắt buộc, nút nộp và mở trang xác nhận trong tab mới | Đạt khi kiểm tra mã HTML |
+| Kiểm tra trang xác nhận có liên kết về `index.html` | Đạt khi kiểm tra mã HTML |
+| Kiểm tra không có JavaScript và dữ liệu form không được truyền đi | Đạt khi kiểm tra mã nguồn; chưa kiểm thử tương tác trên trình duyệt |
 
-Trước khi sửa, HTML yêu cầu `/css/style.css` nhưng đường dẫn đó trả HTTP 404; vì vậy trình duyệt không tải được CSS. Sau khi đổi liên kết thành `style.css`, tệp CSS trên Pages trả HTTP 200. CSS hiện có Grid một cột ở màn hình nhỏ, chuyển thành hai và ba cột ở màn hình rộng; liên kết và form có chỉ báo `focus-visible` để hỗ trợ thao tác bàn phím. Có thể đối chiếu mã ở [commit sửa](https://github.com/NgoQuocTrieu/KiemTra_A2.2/commit/2b7b7f583b55c9802e2bfaeb4a3ee20e5daacc2a) và bản đang chạy ở [GitHub Pages](https://ngoquoctrieu.github.io/KiemTra_A2.2/).
+## Tệp trong repository
 
-## Demo trực tiếp
+- `index.html`: trang portfolio chính.
+- `style.css`: kiểu dáng và bố cục responsive.
+- `ket-qua.html`: trang xác nhận demo.
+- [CHANGLELOG.md](./CHANGLELOG.md): ghi các thay đổi theo phiên bản. Tên tệp hiện tại là `CHANGLELOG.md`.
+- [AI_LOG.md](./docs/AI_LOG.md): nhật ký AI.
+- [RELEASE_NOTES.md](./RELEASE_NOTES.md): ghi chú phát hành hiện có.
 
-Mở URL Pages, chỉ đường dẫn CSS và SHA ở phần kiểm chứng; thu nhỏ cửa sổ để cho thấy bố cục co giãn; dùng phím Tab để xem focus; cuối cùng thử để trống trường bắt buộc trong form. Form là mô phỏng, không có máy chủ nhận dữ liệu.
-
+## Trạng thái bàn giao

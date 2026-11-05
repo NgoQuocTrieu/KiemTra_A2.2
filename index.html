@@ -8,12 +8,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header><a class="brand" href="#gioi-thieu">FIT / PORTFOLIO V5</a>
+<body id="top">
+    <header>
+        <a class="brand" href="#gioi-thieu">FIT / PORTFOLIO V8</a>
         <nav class="menu" aria-label="Điều hướng chính">
-            <a href="#gioi-thieu">Giới thiệu</a><a href="#ky-nang">Kỹ năng</a>
-            <a href="#du-an">Dự án</a><a href="#lo-trinh">Lộ trình</a><a href="#lien-he">Liên hệ</a>
+            <a href="#gioi-thieu">Giới thiệu</a>
+            <a href="#ky-nang">Kỹ năng</a>
+            <a href="#du-an">Dự án</a>
+            <a href="#lo-trinh">Lộ trình</a>
+            <a href="#lien-he">Liên hệ</a>
         </nav>
+        <input class="theme-toggle-control" id="theme-toggle" type="checkbox">
+        <label class="button theme-toggle-label" for="theme-toggle">
+            <span class="theme-label-light">Bật giao diện tối</span>
+            <span class="theme-label-dark">Bật giao diện sáng</span>
+        </label>
     </header>
     <main>
         <section class="hero" id="gioi-thieu"><span>LAB 5 · HTML5 + CSS3</span>
@@ -56,29 +65,33 @@
             </ol>
         </section>
         <section id="lien-he">
-            <h2>Liên hệ</h2>
-            <p>Form mô phỏng, chưa gửi email hoặc lưu vào cơ sở dữ liệu. Chỉ nhập dữ liệu giả.</p>
-            <form action="ket-qua.html" method="get">
+            <h2 id="contact-heading">Liên hệ</h2>
+            <p>Biểu mẫu demo; chỉ nhập dữ liệu giả. Nội dung không được gửi hoặc lưu.</p>
+            <form class="contact-form" action="ket-qua.html" method="get" target="_blank"
+                aria-labelledby="contact-heading">
                 <div class="form-field">
                     <label for="fullname">Họ tên (bắt buộc)</label><!-- 4.1 -->
-                    <input id="fullname" name="fullname" type="text" autocomplete="name" required
-                        minlength="0"><!-- 4.4 -->
+                    <input id="fullname" type="text" autocomplete="name" required
+                        minlength="2" aria-describedby="fullname-help"><!-- 4.4 -->
+                    <p class="help" id="fullname-help">Nhập ít nhất 2 ký tự.</p>
                 </div>
                 <div class="form-field"><label for="email">Email (bắt buộc)</label>
-                    <input id="email" name="email" type="email" required autocomplete="email"
+                    <input id="email" type="email" required autocomplete="email"
                         aria-describedby="email-help"><!-- 4.2; 4.3 -->
                     <p class="help" id="email-help">Ví dụ: an@example.com</p>
                 </div>
                 <div class="form-field"><label for="message">Nội dung (bắt buộc)</label>
-                    <textarea id="message" name="message" rows="4" required minlength="10" maxlength="500"
+                    <textarea id="message" rows="4" required minlength="10" maxlength="500"
                         aria-describedby="message-help"></textarea><!-- 4.5; 4.6; 4.7 -->
                     <p class="help" id="message-help">Nhập từ 10 đến 500 ký tự.</p>
                 </div>
-                <button class="button" type="button">Kiểm tra biểu mẫu</button><!-- 4.8 -->
+                <p class="form-status">Trình duyệt kiểm tra các trường bắt buộc. Đây là bản demo; nội dung không được gửi hoặc lưu.</p>
+                <button class="button" type="submit">Nộp thông tin</button>
             </form>
         </section>
     </main>
     <footer>FIT – DNU · Bài mẫu Lab 5 · HTML/CSS thuần</footer>
+    <a class="button back-to-top" href="#top" aria-label="Lên đầu trang">↑</a>
 </body>
 
 </html>
